@@ -93,7 +93,7 @@ export default function OnboardingPage() {
         {/* Introduction Text (Only before step 1) */}
         {currentStep === 1 && (
              <div className="text-center mb-4 animate-in fade-in duration-500">
-                <h1 className="text-2xl font-bold mb-2">Let's Personalize Kairo For You ✨</h1>
+                <h1 className="text-2xl font-bold mb-2">Let&apos;s Personalize Kairo For You ✨</h1>
                 <p className="text-muted-foreground text-sm max-w-md mx-auto">
                   Answering these quick questions helps Kairo understand your needs and tailor the AI coaching experience.
                 </p>
