@@ -5,12 +5,12 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import { ArrowLeft, ArrowRight, Rocket, Zap, LineChart, Check } from 'lucide-react'; // Keep needed icons
+import { ArrowLeft, ArrowRight, Check } from 'lucide-react';
 import Link from 'next/link';
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Input } from "@/components/ui/input"; // For optional text input
+import { Input } from "@/components/ui/input";
 
 // Placeholder for Orb
 const OrbPlaceholder = () => (
@@ -157,7 +157,7 @@ export default function OnboardingPage() {
                 <h2 className="text-lg font-semibold text-center mb-6">What are your biggest challenges? 🤔</h2>
                  {/* Q4: Biggest Challenge */}
                  <div className="space-y-2">
-                   <Label>What's your toughest sales hurdle right now? 🎯</Label>
+                   <Label>What&apos;s your toughest sales hurdle right now? 🎯</Label>
                    <RadioGroup defaultValue={answers.challenge} onValueChange={(value) => handleInputChange('challenge', value)} className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
                      <Label className="border rounded-md p-3 flex items-center gap-2 [&:has([data-state=checked])]:border-primary"><RadioGroupItem value="objections" id="ch1" /> Handling Objections</Label>
                      <Label className="border rounded-md p-3 flex items-center gap-2 [&:has([data-state=checked])]:border-primary"><RadioGroupItem value="closing" id="ch2" /> Closing Deals</Label>
@@ -188,7 +188,7 @@ export default function OnboardingPage() {
                <h2 className="text-lg font-semibold text-center mb-6">What are your goals with Kairo? 🏆</h2>
                  {/* Q7: Primary Goal */}
                  <div className="space-y-2">
-                    <Label>What's your main goal using Kairo? 🏁</Label>
+                    <Label>What&apos;s your main goal using Kairo? 🏁</Label>
                      <RadioGroup defaultValue={answers.goal} onValueChange={(value) => handleInputChange('goal', value)} className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
                        <Label className="border rounded-md p-3 flex items-center gap-2 [&:has([data-state=checked])]:border-primary"><RadioGroupItem value="close_more" id="g1" /> Close More Deals</Label>
                        <Label className="border rounded-md p-3 flex items-center gap-2 [&:has([data-state=checked])]:border-primary"><RadioGroupItem value="handle_objections" id="g2" /> Handle Objections Better</Label>

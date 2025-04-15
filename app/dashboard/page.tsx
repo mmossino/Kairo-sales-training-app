@@ -1,3 +1,5 @@
+'use client'; // If interactions or state needed
+
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton"; // For placeholder loading state
@@ -23,7 +25,7 @@ export default function DashboardPage() {
       <div className="w-full max-w-3xl mx-auto">
         {/* Past Sessions Section - Single Column List */}
         <section>
-          <h1 className="text-3xl font-bold mb-8">Session History</h1>
+          <h1 className="text-3xl font-bold mb-8">Welcome back, {userName}!</h1>
           <div className="space-y-6">
             {isLoading ? (
               Array.from({ length: 3 }).map((_, index) => (

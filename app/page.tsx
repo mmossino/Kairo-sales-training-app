@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import Link from 'next/link';
-import { TextSearch, Mic, Sparkles, Rocket, BrainCircuit, LineChart, Trophy } from 'lucide-react';
+import { TextSearch, Mic, Sparkles, Rocket, BrainCircuit, LineChart } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -63,11 +63,6 @@ export default function Home() {
             <div className="bg-primary/10 p-4 rounded-full mb-2"><LineChart className="h-8 w-8 text-primary" /></div>
             <h3 className="text-xl font-semibold">Actionable AI Insights</h3>
             <p className="text-muted-foreground text-sm">Receive instant, granular feedback on tone, pacing, objection handling, and closing effectiveness after every session.</p>
-          </div>
-          <div className="flex flex-col items-center text-center gap-4">
-            <div className="bg-primary/10 p-4 rounded-full mb-2"><Trophy className="h-8 w-8 text-primary" /></div>
-            <h3 className="text-xl font-semibold">Accelerate Your Wins</h3>
-            <p className="text-muted-foreground text-sm">Build confidence, master techniques, and measurably improve your close rate through consistent, targeted practice.</p>
           </div>
         </div>
       </section>

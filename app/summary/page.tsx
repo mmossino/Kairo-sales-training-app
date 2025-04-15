@@ -1,5 +1,4 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, XCircle, Rocket } from 'lucide-react'; // Icons for feedback and upgrade prompt
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"; // Import Tabs
 import { Progress } from "@/components/ui/progress"; // Import Progress
